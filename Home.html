@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>BANAN</title>
+        <link rel="icon" type="image/x-icon" href="banana.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="Home.html">B A N A N</a></div>
+                <ul class="links">
+                    <li><a href="Why.html">Why</a></li>
+                    <li><a href="Does.html">Does</a></li>
+                    <li><a href="This.html">This</a></li>
+                    <li><a href="#contactbar">Contact</a></li>
+                </ul>
+                <a href="BANANAS.html" 
+                class="action_btn">Go Bananas</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="Why.html">Why</a></li>
+                <li><a href="Does.html">Does</a></li>
+                <li><a href="This.html">This</a></li>
+                <li><a href="#contactbar">Contact</a></li>
+                <li><a href="BANANAS.html" 
+                    class="action_btn">Go Bananas</a></li>
+            </div>
+        </header>
+            <main>
+                <section id="text">
+                    <h1>WELCOME TO THE JUNGLE</h1>
+                    <p> Don't go bananas</p>
+                </section>
+            </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+        <div class="contactbar" id="contactbar">
+             <table class="contacttable">
+                <tr>
+                    <th colspan="2">Contact me:</th>
+                </tr>
+                <tr>
+                    <th>Gmail: MunkeyDunkey@gmail.com | </th>
+                    <th>| Mobile: +1 (479)-232-1231</th>
+                </tr>
+                <tr>
+                    <th colspan="2">©MunkeyDunkey All rights reserved</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
