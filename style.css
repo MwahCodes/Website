@@ -9,11 +9,10 @@
 
 body{
     height: 100vh;
-    background-color: #fff;
-    background-image: url('dunkey1.png');
-    background-size: cover;
+    background-color: #ffd858;
+    background-image: url('dest.png');
+    background-size: 100% 100%;
     background-position: center;
-    @include 'style.css'
 }
 
 li {
@@ -90,19 +89,52 @@ header{
 }
 
 section {
-    height: 70vh;
+    height: 52vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    font-weight: bold;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: rgb(10, 200, 0);
-    font-weight: bold;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 
+    text-align: left;
+    color: rgb(0, 0, 0);
+    \\text-shadow: -1px -1px 0 #000, 
     1px -1px 0 #000, 
     -1px 1px 0 #000, 
     1px 1px 0 #000;
+    margin-top: 28vh;
+    background: #ff8800;
+}
+
+img {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 1rem;
+    margin: 5rem;
+}
+
+.git {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+}
+
+.gitbutton{
+    border: none;
+    border-radius: 1rem;
+    background: none;
+}
+
+.mainbox {
+    position: ;
+    right: 10rem;
+}
+
+.textbox {
+    margin: 2rem;
+    margin-top: 5rem;
+    width: 80%;
 }
 
 .dropdown_menu{
@@ -137,7 +169,7 @@ section {
 }
 
 #myVideo {
-    background-image: url('https://gifdb.com/images/high/gorilla-lying-in-the-grass-4t9v4l81x7g5ivdi.gif');
+    background-image: url('UARKCSCE2004Fall2023');
     background-size: cover;
     max-width: 100vw;
     padding:0;
@@ -146,10 +178,10 @@ section {
 
 .contactbar{
     position: absolute;
-    bottom: -40vh;
+    bottom: -20rem;
     background: linear-gradient( to bottom, 
-    #fff, #f1ff56, #f1ff56, #f1ff56);
-    min-height: 40vh;
+    #ffd858, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800);
+    min-height: 20rem;
     min-width: 100%;
     align-items: center;
     justify-content: center;
@@ -158,7 +190,7 @@ section {
 
 .contacttable{
     position: absolute;
-    bottom: 4vh;
+    bottom: 0;
     
 }
 
@@ -186,6 +218,6 @@ section {
 
 @media (min-width: 543px) {
     .contacttable{
-        right: 35vw;
+        right: 40vw;
     }
 }
