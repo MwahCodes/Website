@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <title>Raheem Shanti</title>
+        <link rel="icon" type="image/x-icon" href="images\RS.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">R A H E E M</a></div>
+                    <ul class="links">
+                        <li><a href="../Index.html">About Me</a></li>
+                        <li><a href="Resume&Skills.html">Resume & Skills</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                    </ul>
+                    <a href="#contactbar" 
+                        class="action_btn">Contact Me!</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="../Index.html">About Me</a></li>
+                <li><a href="Resume&Skills.html">Resume & Skills</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="#contactbar" 
+                    class="action_btn">Contact Me!</a></li>
+            </div>
+        </header>
+            <main>
+                <section class="textR">
+                    <div class="mainbox">
+                        <a href="../images/Raheem_Shanti_Resume.pdf">
+                            <img class="resume" src="../images/Resumeimg.png" style="float:left";>
+                        </a>
+                        <div class="textbox">
+                            <h1>My Resume and Skills</h1>
+                                <p>Displayed on the lefthandside of the screen is my resume(click the image to download). 
+                                    I have included a short list of programming languages that I would consider myself 
+                                    knowleged in and capable of utilizing. I am currently learning more about Javascript 
+                                    and C++.
+                                    <br><br>
+                                    <img class="giT" src="../images/JavaT.png" alt="logo">                        
+                        <img class="giT" src="../images/html5T.png" alt="logo">
+                        <img class="giT" src="../images/CSST.png" alt="logo">
+                        <img class="giT" src="../images/PythonT.png" alt="logo">
+                        <img class="giT" src="../images/javascriptT.png" alt="logo">
+                            </p>
+                        </div>
+                        
+                    </div>  
+                </section>
+            </main>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+        <div class="contactbar" id="contactbar">
+            <div class="container">
+                <form action="https://formsubmit.co/raheemtoo@gmail.com" method="POST">
+                    <input type="text" name="_honey" style="display:none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <table class="contacttable">
+                        <tr>
+                            <th colspan="2">
+                                Send me a message!
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control" name="name" id="formId1" placeholder="" required>
+                                    <label for="name">Name</label>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control" name="email" id="formId1" placeholder="" required>
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <div class="col-md-12">
+                                    <label for="comments" class="form-label">Comment</label>
+                                    <textarea class="form-control" name="comments" id="comments" rows="3" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><th display="none">&#160</th></tr>
+                        <tr>
+                            <th colspan="2">
+                                <div class="mb-3 row">
+                                    <div class="offset-sm-0 col-sm-8">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>

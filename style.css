@@ -1,0 +1,398 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffd858;
+    background-image: url('Caat.JPG');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+a:hover{
+    color: yellow;
+}
+
+header{
+    position: sticky;
+    padding: 0 2rem;
+    top: 0;
+    
+}
+
+.navbar{
+    width: 100%;    
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar .toggle_btn{
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color:yellow;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+section {
+    height: 52vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-top: 28vh;
+    background: #ff8800;
+}
+
+.textR {
+    height: 52vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 28vh;
+    background: #ff8800;
+}
+
+.textP {
+    height: 52vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 28vh;
+    background: #ff8800;
+    
+}
+
+.textbox {
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+.textboxP {
+    margin: 5rem;
+    margin-top: 0rem;
+    width: 85%;
+}
+
+img {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 1rem;
+    margin: 5rem;
+}
+
+.git {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+}
+
+.giT {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    float: left;
+}
+
+.giT:hover {
+    scale: 1.05;
+}
+
+.gitbutton{
+    border: none;
+    border-radius: 1rem;
+    background: none;
+}
+
+.gitbutton:hover{
+    scale: 1.05;
+
+}
+
+.gitbutton:active{
+    scale: 0.95;
+}
+
+
+.mainbox {
+    right: 10rem;
+}
+
+.resume{
+    height: 28rem;
+    width: auto;
+}
+
+.resume:hover{
+    scale: 1.05;
+}
+
+.resume:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;    
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#myVideo {
+    background-image: url('UARKCSCE2004Fall2023');
+    background-size: cover;
+    max-width: 100vw;
+    padding:0;
+    margin:0;
+}
+
+.contactbar{
+    position: absolute;
+    bottom: -25rem;
+    background: linear-gradient( to bottom, 
+    #ffd858, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800, #ff8800);
+    min-height: 25rem;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    color:#000000;
+}
+
+.contacttable{
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media (min-width: 543px) {
+    .contacttable{
+        right: 40vw;
+    }
+}
+
+@media(max-width: 1605px){
+    img {
+    width: 25rem;
+    height: 21rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    }
+}
+
+@media(max-width: 1529px){
+    section {
+        font-size: 0.95rem;
+    }
+}
+
+@media(max-width: 1529px){
+    img {
+    width: 21rem;
+    height: 17.5rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    }
+}
+
+@media(max-width: 1271px){
+    section {
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width: 1271px){
+    section {
+        font-size: 0.85rem;
+    }
+    .giT {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media(max-width: 1059px){
+    section, .textR, .textP {
+        font-size: 0.8rem;
+    }
+    img {
+    width: 17.5rem;
+    height: 14.6rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    }
+    .giT {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media(max-width: 775px){
+    section, .textR, .textP {
+        font-size: 0.9rem;
+        height: 70vh;
+        margin-top: 20vh;
+    }
+    img {
+    width: 17.5rem;
+    height: 14.6rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    }
+    .contactbar{
+        bottom: -30rem;
+    }
+    .giT {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media(max-width: 625px){
+    section, .textR, .textP {
+        font-size: 0.9rem;
+        height: 90vh;
+        margin-top: 15vh;
+    }
+    img {
+    width: 17.5rem;
+    height: 14.6rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    }
+    .contactbar{
+        bottom: -40rem;
+    }
+}
+
+@media(max-width: 500px){
+    section, .textR, .textP {
+        font-size: 0.9rem;
+        height: 120vh;
+        margin-top: 15vh;
+    }
+    img {
+    width: 17.5rem;
+    height: 14.6rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    }
+    .contactbar{
+        bottom: -55rem;
+    }
+}
